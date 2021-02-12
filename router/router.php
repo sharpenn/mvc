@@ -1,6 +1,6 @@
 <?php 
 
-use App\Controller\Home;
+use App\Controller\{Home, HomeAdmin};
 
 //GERENCIANDO AS ROTAS DA URL
 $routes = [

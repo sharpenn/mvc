@@ -1,4 +1,4 @@
-<?php include __DIR__.'./../header/header.php';?>
+
 
 <div class="header-home">    
     <h1 class="header-home-title">

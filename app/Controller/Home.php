@@ -21,14 +21,16 @@ class Home {
      * @var string
      */
 
-    private $view;
+    protected $view;
 
      /**
       * Valores que serão passados para a página
       * @var array
       */
 
-    private $values = [];
+    protected $values = [
+        'nomeDoUsuarioLogado' => 'Douglas Oliveira Paschoal'
+    ];
 
      /**
       * Construtor da classe
@@ -56,11 +58,25 @@ class Home {
      */
     public function render() {
 
-        //EXTRAI OS VALORES P/ MONTAR O ARRAY
-        extract($this->values);
+        //MOSTRA O HEADER
+        $header = file_get_contents(__DIR__.'./../../themes/header/header.php');
+        echo $this->getTemplate($header, $this->values);
 
         //MOSTRA O RESULTADO
-        include $this->view;
+        $content = file_get_contents($this->view);
+        echo $this->getTemplate($content, $this->values);
+    }
+
+    /**
+     * Função responsável por substituir os valores do array no template
+     */
+    public function getTemplate($page, $array) {
+        //SUBSTITUI AS CHAVES DUPLAS PELOS VALORES
+        foreach($array as $key=>$value) {
+            $page = str_replace('{{'.$key.'}}', $value, $page);
+        }
+
+        return $page;
     }
 
 
