@@ -1,11 +1,13 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Spectral', serif;
 
 }
 
 .nav-menu {
     background-color: black;
+    border-bottom: 1px solid rgb(10, 10, 10);
 }
 
 .nav-menu li{
@@ -22,7 +24,7 @@
 
 .nav-menu li a {
     color: #fc888c;
-    font-family: 'Spectral', serif;
+
     text-decoration: none;
     font-size: 17px;
 }
@@ -54,4 +56,30 @@
 }
 #carrinho:hover {
     padding-bottom: 7px;
+}
+
+
+.header-home {
+    width: 100vw;
+    height: 90vh;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    border-bottom: 8px solid #75858f;
+    background-image: url('https://i.ibb.co/kg0Ynq5/header-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.header-home-title {
+    color: #ff6e72;
+    font-size: 40px;
+}
+
+#header-title-small {
+    color: #75858f;
+    font-size: 30px;
+    text-align: center;
+
 }
