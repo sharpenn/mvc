@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.nav-menu {
+    background-color: black;
+}
+
+.nav-menu li{
+    display: inline-block;
+    padding: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.nav-menu li:hover{
+    padding-bottom: 17px;
+    border-bottom: 3px solid #fc888c;
+}
+
+.nav-menu li a {
+    color: #fc888c;
+    font-family: 'Spectral', serif;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#login, #carrinho {
+    float: right;
+    background: #fc888c;
+}
+
+.active a{
+    font-weight: bold;
+}
+
+
+#login a{
+    color: black;
+    font-weight: bold;
+}
+
+#login:hover, #carrinho:hover{
+
+    border-bottom: 3px solid #ff6e72;
+}
+
+#carrinho {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#carrinho:hover {
+    padding-bottom: 7px;
+}

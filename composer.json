@@ -1,0 +1,17 @@
+{
+    "name": "sharpenn/mvc",
+    "description": "Primeiro sistema, seguindo o padrão MVC, para a web.art",
+    "authors": [
+        {
+            "name": "Douglas Oliveira Paschoal",
+            "email": "douglas.oliveira@wapstore.com.br",
+            "role": "Junior back-end developer"
+        }
+    ],
+
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}
