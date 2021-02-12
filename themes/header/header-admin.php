@@ -15,7 +15,6 @@
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#">Produtos</a></li>
             <li><a href="#">Conheça nossa loja</a></li>
-            <li><a href="#">Contate-nos</a></li>
             <li> <a href="#">Gerenciar</a> </li>
             <li id="carrinho"><a href="#"><img src="https://image.flaticon.com/icons/png/512/126/126510.png" alt="" width="38px"></a></li>
             <li id="login"><a href="#">Olá, {{nomeDoUsuarioLogado}}</a></li>
