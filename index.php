@@ -3,7 +3,8 @@
 require __DIR__.'/vendor/autoload.php';
 
 //EXTRAI A ROTA DA URL
-$uri = $_SERVER['REQUEST_URI'];
+$uri = ($_GET['route']) ?? null;
+
 
 //GERENCIAMENTO DE ROTAS 
 include __DIR__.'/router/router.php';
